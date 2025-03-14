@@ -12,11 +12,9 @@ public class NavigationViewCoordinator<T: Coordinatable>: ViewWrapperCoordinator
                 }
             )
             #else
-            AnyView(
-                NavigationStack {
-                    view
-                }
-            )
+            NavigationStack {
+                view
+            }
             #endif
         }
     }
