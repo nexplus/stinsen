@@ -13,10 +13,9 @@ public class NavigationViewCoordinator<T: Coordinatable>: ViewWrapperCoordinator
             )
             #else
             AnyView(
-                NavigationView {
+                NavigationStack {
                     view
                 }
-                .navigationViewStyle(StackNavigationViewStyle())
             )
             #endif
         }
